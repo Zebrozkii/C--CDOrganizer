@@ -1,0 +1,13 @@
+<h1>Add a new item to @Model.GetGenre()</h1>
+
+<form action='/categories/@Model.GetId()/items' method='post'>
+  <input id='categoryId' name='categoryId' type='hidden' value='@Model.GetId()'>
+
+  <label for='artistName'>Artist Name:</label><br>
+  <input id='artistName' name='artistName' type='text'>
+
+  <label for='songName'>Song Name:</label><br>
+  <input id='songName' name='songName' type='text'>
+
+  <button type='submit'>Add item</button>
+</form>
